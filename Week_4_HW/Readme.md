@@ -27,7 +27,7 @@ The administrator has provided a checklist for you detailing all the steps that 
 #### Set permissions on sensitive files:
 - Set permissions on `/etc/shadow` to allow only `root` read and write access.
 
-      sudo chmod 600 /etc/shadow
+        sudo chmod 600 /etc/shadow
 
 - Set permissions on `/etc/gshadow` to allow only `root` read and write access.
 
@@ -44,33 +44,33 @@ The administrator has provided a checklist for you detailing all the steps that 
 #### Create user accounts:
 - Add user accounts `sam`, `joe`, `amy`, `sara` and `admin`.
 
-  sudo adduser sam
+        sudo adduser sam
 
-  sudo adduser joe
+        sudo adduser joe
 
-  sudo adduser amy  
+        sudo adduser amy  
 
-  sudo adduser sara
+        sudo adduser sara
 
-  sudo adduser admin
+        sudo adduser admin
 
 - Force users to create 16 character passwords incorporating numbers and symbols.
 
 sudo nano /etc/pam.d/common-password ??
 
-??????
+  ??????
 
 - Force passwords to expire every `90` days.
 
-?????
+  ?????
 
 - Ensure that only the `admin` has general sudo access.
 
-?????
+  ?????
 
 #### Create user group:
 - Add a `engineers` group to the system.
-      sudo addgroup engineers
+    sudo addgroup engineers
 
 
 - Add users `sam`, `joe`, `amy`, and `sara` to the managed group.
