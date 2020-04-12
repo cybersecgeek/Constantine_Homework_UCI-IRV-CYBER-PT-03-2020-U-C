@@ -75,24 +75,24 @@ sudo nano /etc/pam.d/common-password ??
 
 - Add users `sam`, `joe`, `amy`, and `sara` to the managed group.
 
-    sudo usermod -G engineers sam
-    sudo usermod -G engineers joe
-    sudo usermod -G engineers amy
-    sudo usermod -G engineers sara
+        sudo usermod -G engineers sam
+        sudo usermod -G engineers joe
+        sudo usermod -G engineers amy
+        sudo usermod -G engineers sara
 
 - Create a shared folder for this group at `/home/engineers`.
 
-    sudo mkdir /home/engineers
+        sudo mkdir /home/engineers
 
 - Change the group on the engineers directory to the `engineers` group.
 
-  sudo chown :engineers /home/engineers
+        sudo chown :engineers /home/engineers
 
 - Add the `GUID` bit _and_ the `sticky` bit to allow collaboration between engineers in this directory.
 
-  sudo chmod 3770 /home/engineers
+      sudo chmod 3770 /home/engineers
 
-   <!--- http://permissions-calculator.org /* ---->
+      <!--- http://permissions-calculator.org /* ---->
 
 #### Install and configure `tripwire`.
 
