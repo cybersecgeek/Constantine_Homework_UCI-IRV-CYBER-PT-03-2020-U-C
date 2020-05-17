@@ -7,7 +7,7 @@ The Resistance (starwars.com) is able to send emails but unable to receive any b
 
 
 
---------------------------------------------------------------------------
+---------------------------------------------------------------------------
 Mail eXchanger 	Priority
 ------------------------------
 aspmx2.googlemail.com 	10
@@ -15,7 +15,7 @@ alt1.aspx.l.google.com 	5
 alt2.aspmx.l.google.com 	5
 aspmx3.googlemail.com 	10
 aspmx.l.google.com 	1
---------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
 
 
