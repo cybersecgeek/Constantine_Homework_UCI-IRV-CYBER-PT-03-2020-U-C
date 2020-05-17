@@ -32,5 +32,11 @@ This is why the emails are going to the [:::spam::::] folder.
 #      Well we can't have everything...
 #      Will check the Cantina later.
 
+Correct records:
+
+v=spf1 a mx mx:smtp.secureserver.net include:aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215 ip4:45.23.176.21
+
+
+
 
 Mission 3
