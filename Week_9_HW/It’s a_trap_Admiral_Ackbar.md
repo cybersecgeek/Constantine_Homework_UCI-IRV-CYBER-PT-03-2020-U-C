@@ -27,10 +27,12 @@ v=spf1 a mx mx:smtp.secureserver.net include:aspmx.googlemail.com ip4:104.156.25
 The new ip (45.23.176.21) is not included in the SFP records.
 This is why the emails are going to the [:::spam::::] folder.
 
-#      Now I am hungry and want some SPAM.
-#      pause()
-#      Well we can't have everything...
-#      Will check the Cantina later.
+<!----
+      Now I am hungry and want some SPAM.
+      pause()
+      Well we can't have everything...
+      Will check the Cantina later. -
+                                    ---->
 
 Correct records:
 
