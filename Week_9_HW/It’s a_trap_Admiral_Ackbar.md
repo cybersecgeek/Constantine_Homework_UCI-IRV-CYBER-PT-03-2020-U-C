@@ -1,5 +1,7 @@
-Mission 1
+Constantine P | Week 9 HW |
 
+
+Mission 1
 
 
 
@@ -8,7 +10,7 @@ The Resistance (starwars.com) is able to send emails but unable to receive any b
 
 
 ---------------------------------------------------------------------------
-Mail eXchanger 	Priority 
+Mail eXchanger 	Priority
 ------------------------------
 aspmx2.googlemail.com 	10
 alt1.aspx.l.google.com 	5
@@ -41,4 +43,80 @@ v=spf1 a mx mx:smtp.secureserver.net include:aspmx.googlemail.com ip4:104.156.25
 
 
 
+
 Mission 3
+
+Non-authoritative answer:
+www.theforce.net        canonical name = theforce.net.
+Name:   theforce.net
+Address: 104.156.250.80
+
+
+
+A CNAME record is not setup for theforce.net
+
+The Correct record would look something like this onece queried.
+
+Non-authoritative answer:
+resistance.theforce.net        canonical name = theforce.net.
+Name:   theforce.net
+Address: 104.156.250.80
+
+
+
+
+Mission 4
+
+nslookup princessleia.site
+
+
+Non-authoritative answer:
+Name:   princessleia.site
+Address: 184.168.221.61
+
+
+
+
+nslookup -type=ns princessleia.site
+
+princessleia.site       nameserver = ns25.domaincontrol.com.
+princessleia.site       nameserver = ns26.domaincontrol.com.
+
+
+
+
+Another NS record should be added to incude the backup DNS server.
+
+princessleia.site       nameserver = ns25.domaincontrol.com.
+princessleia.site       nameserver = ns26.domaincontrol.com.
+princessleia.site       nameserver = ns2.galaxybackup.com
+
+or/and ??
+
+ @ 	NS 	ns1.exampleserver.com 	
+
+
+
+
+ Mission 5
+
+
+Batuu --> D --> G --> O --> R --> R --> V --> Jedga
+
+
+
+
+ Mission 6
+
+
+
+
+
+
+
+
+
+  Mission 7
+
+
+screen //telnet towel.blinkenlights.nl
