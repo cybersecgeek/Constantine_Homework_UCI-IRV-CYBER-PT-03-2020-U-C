@@ -10,17 +10,16 @@
 
 
 - How can this information be helpful to an attacker:
-
-  It can be used in the reconnaissance  phase to gather more information about the target. ie: possible usernames , passwords.
-  It can also be used to launch a social engineering atack.
+  It can be used in the reconnaissance phase to gather more information about the target. ie: possible usernames, passwords.
+  It can also be used to launch a social engineering attack.
 
       ie: When targeting the IT department.
 
 
       This is your CEO Karl Fitzgerald... bla bla bla...
-      This is an urgernt request.
-      Please issue a new VPN certificat and password for my account and send it to me....
-      If you wish to continue to be employed tommorow morning...
+      This is an urgent request.
+      Please issue a new VPN certificate and password for my account and send it to me....
+      If you wish to continue to be employed tomorrow morning...
 
       Bla Bla Bla...
 
@@ -192,7 +191,7 @@ Your client has asked that you help identify any vulnerabilities with their file
   Update the samba server
   update core os
   make sure smb v 1 is disabled
-  disable  anon access.
+  disable  anonymous access.
 
 
 
