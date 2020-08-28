@@ -12,21 +12,45 @@ Answer the following questions about the HTTP request and response process.
 
 1. What type of architecture does the HTTP request and response process occur in?
 
+    Client - Server
+
 2. What parts make up an `HTTP request`?
+
+    The request line, the headers, and the body of the request. 
+
+    
 
 3. What is the optional part of an HTTP request?
 
+    The body of the request.
+
 4. What three parts make up an HTTP response?
 
+    A Status-line.
+    Zero or more header (General|Response|Entity) fields followed by CRLF.
+    An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields. 
+    Optionally a respose-body.
+
 5. Which number class of status codes represent errors?
+    
+
+    400     ie: ERR404:Page Not Found
 
 6. What are the two most common request methods that a security professional will come across?
 
+    GET & POST 
+
 7. Which type of HTTP request method is used for sending data?
+
+POST
 
 8. Which part of an `HTTP request` contains the data being sent to the server?
 
+The request body.
+
 9. In which part of an HTTP response would the browser receive the web code to generate and style a web page?
+
+The response body.
 
 #### Using cURL
 
@@ -34,13 +58,28 @@ Answer the following questions about `curl`:
 
 10. What are the advantages of using curl over the browser?
 
+
+    
+    ? allows you to easily see the response status lines, is repeatable, can be automated, and can be edited on the fly. 
+    
+     It is fast and it  has no GUI. !!!!     Check !
+
+
 11. Which curl option is used to change the request method?
+
+    -X 
 
 12. Which curl option is used to set request headers?
 
+    -H
+
 13. Which curl option is used to view the response header?
 
+    -I
+
 14. Which request method might an attacker use to scope out usable HTTP requests that an HTTP server will accept?
+
+    OPTIONS ?
 
 #### Sessions and Cookies
 
@@ -53,7 +92,7 @@ Answer the following questions about sessions and cookies.
     ```HTTP
     HTTP/1.1 200 OK
     Content-type: text/html
-    Set-Cookie: cart=Bob
+    Set-Cookie: cart=Bob   <--- This one - Nom! Nom! Nom!
     ```
 
 16. Which request header sets a cookie in the client?
@@ -61,7 +100,7 @@ Answer the following questions about sessions and cookies.
     ```HTTP
     GET /cart HTTP/1.1
     Host: www.example.org
-    Cookie: cart=Bob
+    Cookie: cart=Bob       <--- This one - Nom! Nom! Nom! 
     ```
 
 #### Example HTTP Requests and Responses
@@ -85,11 +124,19 @@ username=Barbara&password=password
 
 17. What was the request method?
 
+    POST
+
 18. Was the request encrypted or unencrypted?
+
+    unencrypted
 
 19. Does the request have a user session associated to it?
 
+    Nope
+
 20. What kind of data is being sent from this request body.
+
+A username and a password used for loging in to a website / web app.
 
 #### HTTP Response Example
 
@@ -112,13 +159,23 @@ X-XSS-Protection: 1; mode=block
 
 21. What was the response status code?
 
+200 OK
+
 22. Was the response encrypted or unencrypted?
+
+ NOPE
 
 23. Does this response have a user session associated to it?
 
+Yup. There is an acctive cookie wth a sessionID [ - Set-Cookie: SessionID=5 ]
+
 24. What kind of content is likely to be in the [page content] response body?
 
+ code that renders the body of the page.
+
 25. If your class covered security headers, what security request headers have been included?
+
+HTTP Strict Transport Security (HSTS) ??
 
 #### Monoliths and Microservices
 
@@ -126,17 +183,28 @@ Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
 
+services 
+
 27. What is a service that writes to a database and communicates to other services?
+
+APIs ?
+
 
 28. What type of underlying technology allows for `microservices` to become scalable and have redundancy?
 
+Containers
+    
 #### Container Vulnerability Filtering
 
 Answer the following questions about vulnerability filtering `Trivy` scans with `jq`:
 
 29. Do `microservices` share the same kind of vulnerabilities as regular operating systems?
 
+Yes
+
 30. Would an organization be more concerned with `Low` severity vulnerabilities as much as `Critical`?
+
+Nope. But it would be better if some of the low vulnerabilities are mitigated.
 
 31. Would the bash tool `jq` be useful in finding certain kinds of vulnerabilities within a vulnerability report?
 
@@ -146,15 +214,25 @@ Answer the following questions about multi-container deployment:
 
 32. What is a tool that can be used to deploy multiple containers at once?
 
+Docker-Compose ?
+
 33. What kind of file format was required for us to deploy a container set?
+
+A .YAML file. 
 
 #### Container Runtime Intrusion Detection Systems
 
 34. What is a tool used to actively detects intrusion behavior within containers?
 
+Falco ?
+
 35. What high-value system file might an intruder view that would trigger a `sensitive file opening` alert?
 
+/etc/shadow
+
 36. What kind of intruder action might trigger an alert from a container IDS that says `shell configuration file has been modified`?
+
+    Creating user accounts 
 
 ---
 
